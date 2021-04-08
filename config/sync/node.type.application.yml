@@ -1,0 +1,11 @@
+uuid: 36308f19-ab02-4514-8d08-6a51c8d78264
+langcode: en
+status: true
+dependencies: {  }
+name: Application
+type: application
+description: 'An online job application.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

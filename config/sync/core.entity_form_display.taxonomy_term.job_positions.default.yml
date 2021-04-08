@@ -1,0 +1,23 @@
+uuid: 930e5948-614a-4513-a301-c4c1301fb3cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.job_positions
+id: taxonomy_term.job_positions.default
+targetEntityType: taxonomy_term
+bundle: job_positions
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true
+  status: true

@@ -1,0 +1,19 @@
+uuid: e236b17e-f3f2-4793-8ef8-d7859458a505
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_app_why
+field_name: field_app_why
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

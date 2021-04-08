@@ -1,0 +1,8 @@
+uuid: 45972e2e-626b-45f6-8146-d0786ee2227a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Job Positions'
+vid: job_positions
+description: 'Vacancies to list on the job application form.'
+weight: 0

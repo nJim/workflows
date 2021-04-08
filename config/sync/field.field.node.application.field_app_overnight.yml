@@ -1,0 +1,23 @@
+uuid: fe5afb49-c8f5-4dc8-bcba-235bffab6660
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_app_overnight
+    - node.type.application
+id: node.application.field_app_overnight
+field_name: field_app_overnight
+entity_type: node
+bundle: application
+label: 'Are you interested in an overnight/residential position?'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

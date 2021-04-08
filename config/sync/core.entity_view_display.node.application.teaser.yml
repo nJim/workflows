@@ -1,0 +1,36 @@
+uuid: fd9d5916-f986-4474-b5bf-a61241f8ec5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.application.field_app_email
+    - field.field.node.application.field_app_experience
+    - field.field.node.application.field_app_orientation
+    - field.field.node.application.field_app_overnight
+    - field.field.node.application.field_app_phone
+    - field.field.node.application.field_app_position
+    - field.field.node.application.field_app_training
+    - field.field.node.application.field_app_why
+    - node.type.application
+  module:
+    - user
+id: node.application.teaser
+targetEntityType: node
+bundle: application
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_app_email: true
+  field_app_experience: true
+  field_app_orientation: true
+  field_app_overnight: true
+  field_app_phone: true
+  field_app_position: true
+  field_app_training: true
+  field_app_why: true

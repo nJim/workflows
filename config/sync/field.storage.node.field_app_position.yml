@@ -1,0 +1,20 @@
+uuid: 82d8dce0-686f-4e62-bba3-18ca962126ff
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_app_position
+field_name: field_app_position
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
