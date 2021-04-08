@@ -6,6 +6,7 @@ module:
   ckeditor: 0
   comment: 0
   config: 0
+  content_moderation: 0
   contextual: 0
   datetime: 0
   dblog: 0
@@ -32,6 +33,7 @@ module:
   toolbar: 0
   user: 0
   views_ui: 0
+  workflows: 0
   views: 10
   standard: 1000
 theme:

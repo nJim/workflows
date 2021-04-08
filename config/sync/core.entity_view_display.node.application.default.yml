@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.app_comments.default
     - field.field.node.application.field_app_comments
     - field.field.node.application.field_app_email
     - field.field.node.application.field_app_experience
@@ -24,6 +25,11 @@ targetEntityType: node
 bundle: application
 mode: default
 content:
+  content_moderation_control:
+    weight: -20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_app_comments:
     weight: 9
     label: above

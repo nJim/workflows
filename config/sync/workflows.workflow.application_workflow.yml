@@ -1,0 +1,87 @@
+uuid: be4b2098-14fb-4e82-b2dd-c8943b2ff598
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.application
+  module:
+    - content_moderation
+id: application_workflow
+label: 'Application Workflow'
+type: content_moderation
+type_settings:
+  states:
+    app_future_prospect:
+      published: false
+      default_revision: false
+      label: 'Future Prospect'
+      weight: 1
+    app_hired:
+      published: false
+      default_revision: false
+      label: Hired
+      weight: -1
+    app_offered_sent:
+      published: false
+      default_revision: false
+      label: 'Offered Sent'
+      weight: -2
+    app_rejected:
+      published: false
+      default_revision: false
+      label: Rejected
+      weight: 0
+    app_requested_interview:
+      published: false
+      default_revision: false
+      label: 'Requested Interview'
+      weight: -3
+    draft:
+      published: false
+      default_revision: false
+      label: Submitted
+      weight: -4
+    published:
+      published: true
+      default_revision: true
+      label: Published
+      weight: 2
+  transitions:
+    app_hire_applicant:
+      label: 'Hire Applicant'
+      from:
+        - app_offered_sent
+      to: app_hired
+      weight: 4
+    app_offer_interview:
+      label: 'Offer Interview'
+      from:
+        - draft
+      to: app_requested_interview
+      weight: 2
+    app_offer_position:
+      label: 'Offer Position'
+      from:
+        - app_requested_interview
+      to: app_offered_sent
+      weight: 3
+    app_save_for_next_year:
+      label: 'Save for next year'
+      from:
+        - app_offered_sent
+        - app_requested_interview
+        - draft
+      to: app_future_prospect
+      weight: 1
+    reject:
+      label: Reject
+      from:
+        - app_offered_sent
+        - app_requested_interview
+        - draft
+      to: app_rejected
+      weight: 0
+  entity_types:
+    node:
+      - application
+  default_moderation_state: draft
