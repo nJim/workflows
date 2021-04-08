@@ -1,0 +1,22 @@
+uuid: ba15419c-30ed-44cb-9fee-6bfc97110ce1
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - oli
+_core:
+  default_config_hash: BL6Gcw5Us0zai1ADadlNYLxlEblMedc_3C3lF0PjtCE
+id: oli_content
+theme: oli
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 6d7342ac-f527-4504-af4f-4f0eaae0f4a4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - oli
+_core:
+  default_config_hash: KfyaTPRJEcAyy2e5AxEfWQnuHcn4WrfvcWek7lSmHZQ
+id: oli_messages
+theme: oli
+region: highlighted
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

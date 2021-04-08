@@ -1,0 +1,22 @@
+uuid: cf987261-a803-4cec-8ddd-6acb0a04d8fc
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - oli
+_core:
+  default_config_hash: XMsRP1YhWAcorbrFWZglMYJ_SgWHyF3fyCh5vDXaUN4
+id: oli_breadcrumbs
+theme: oli
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

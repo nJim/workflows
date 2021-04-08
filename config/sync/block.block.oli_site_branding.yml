@@ -1,0 +1,25 @@
+uuid: 4ade55ff-73cc-417b-b059-fb3d670c63fb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - oli
+_core:
+  default_config_hash: sYjScJ6uW1UvGZ-G3AtTcZmPoOiQJtndHqamm8FAFgU
+id: oli_site_branding
+theme: oli
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

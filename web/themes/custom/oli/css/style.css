@@ -1,0 +1,12 @@
+/**
+ * @file
+ * CSS Overrides for the Oli theme.
+ *
+ * This site is created for demonstrating content workflows. This theme is used
+ * for quick and dirty overrides to the Olivero theme to enhance the demo. We're
+ * not following best practices and anything in this theme should be ignored.
+ */
+
+.node--unpublished {
+  background-color: transparent;
+}

@@ -1,0 +1,20 @@
+uuid: a3a60317-706d-42be-86aa-c468876a5844
+langcode: en
+status: true
+dependencies:
+  theme:
+    - oli
+_core:
+  default_config_hash: WImvmaBdDpwIqobqbDWebBnyxssRvrNEnZSQbOsvOe4
+id: oli_page_title
+theme: oli
+region: content_above
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

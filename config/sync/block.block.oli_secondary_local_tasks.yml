@@ -1,0 +1,22 @@
+uuid: 874941ee-620b-4df6-bbdf-a528240f3200
+langcode: en
+status: true
+dependencies:
+  theme:
+    - oli
+_core:
+  default_config_hash: V7GM1m6Qh500cQE7LWZV8lRuwLqXdjR0S2kSk8pEv6g
+id: oli_secondary_local_tasks
+theme: oli
+region: highlighted
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  provider: core
+  label_display: '0'
+  primary: false
+  secondary: true
+visibility: {  }

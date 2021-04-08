@@ -1,0 +1,22 @@
+uuid: a8eec1d3-e97d-435a-9fce-8878547bd067
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - oli
+_core:
+  default_config_hash: 5kL_iZM_xia3Z8bgsyiZgQphxMGhI8gt2HYo8r5Z7OE
+id: oli_powered
+theme: oli
+region: footer_bottom
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

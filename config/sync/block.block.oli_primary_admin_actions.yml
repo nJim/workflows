@@ -1,0 +1,20 @@
+uuid: cffd6459-3b78-404b-8764-71c9261dab41
+langcode: en
+status: true
+dependencies:
+  theme:
+    - oli
+_core:
+  default_config_hash: sBMSSrWtP58IZaz1i3-MJ9yq_y32w1nc7N5DZJmt-4M
+id: oli_primary_admin_actions
+theme: oli
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }
