@@ -14,22 +14,80 @@ dependencies:
     - field.field.node.application.field_app_why
     - node.type.application
   module:
+    - field_group
     - file
-    - path
     - telephone
+third_party_settings:
+  field_group:
+    group_contact_information:
+      children:
+        - title
+        - field_app_phone
+        - field_app_email
+      parent_name: ''
+      weight: 0
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: false
+      label: 'Contact Information'
+    group_position_resume:
+      children:
+        - field_app_position
+        - field_app_resume
+      parent_name: ''
+      weight: 1
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: true
+        required_fields: false
+      label: 'Position & Resume'
+    group_availability:
+      children:
+        - field_app_orientation
+        - field_app_overnight
+      parent_name: ''
+      weight: 2
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: true
+        required_fields: false
+      label: Availability
+    group_tell_us_about_yourself:
+      children:
+        - field_app_experience
+        - field_app_why
+        - field_app_training
+      parent_name: ''
+      weight: 3
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: true
+        required_fields: false
+      label: 'Tell us about yourself'
 id: node.application.default
 targetEntityType: node
 bundle: application
 mode: default
 content:
-  created:
-    type: datetime_timestamp
-    weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_app_email:
-    weight: 122
+    weight: 3
     settings:
       size: 60
       placeholder: ''
@@ -37,7 +95,7 @@ content:
     type: email_default
     region: content
   field_app_experience:
-    weight: 124
+    weight: 4
     settings:
       rows: 5
       placeholder: ''
@@ -45,26 +103,26 @@ content:
     type: string_textarea
     region: content
   field_app_orientation:
-    weight: 127
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_app_overnight:
-    weight: 128
+    weight: 8
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_app_phone:
-    weight: 123
+    weight: 2
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: telephone_default
     region: content
   field_app_position:
-    weight: 121
+    weight: 2
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -74,14 +132,14 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_app_resume:
-    weight: 129
+    weight: 3
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
     region: content
   field_app_training:
-    weight: 126
+    weight: 6
     settings:
       rows: 5
       placeholder: ''
@@ -89,52 +147,25 @@ content:
     type: string_textarea
     region: content
   field_app_why:
-    weight: 125
+    weight: 5
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
     type: string_textarea
     region: content
-  path:
-    type: path
-    weight: 30
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 15
-    region: content
-    third_party_settings: {  }
-  status:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 120
-    region: content
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 16
-    region: content
-    third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 1
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  uid:
-    type: options_select
-    weight: 5
-    settings: {  }
-    region: content
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true
