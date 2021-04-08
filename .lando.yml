@@ -9,4 +9,8 @@ services:
 tooling:
   drush:
     service: appserver
-    cmd: "drush --root=/app/web --uri=https://workflows-demo.lndo.site/"
+    env:
+      DRUSH_OPTIONS_URI: "https://workflows-demo.lndo.site"
+  drupal:
+    service: appserver
+    cmd: /app/vendor/bin/drupal

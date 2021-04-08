@@ -91,6 +91,7 @@
         }
     },
     "require-dev": {
+        "drupal/console": "~1.0",
         "drupal/devel": "^4.1"
     }
 }
