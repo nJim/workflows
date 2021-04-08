@@ -9,10 +9,12 @@ dependencies:
     - field.field.node.application.field_app_overnight
     - field.field.node.application.field_app_phone
     - field.field.node.application.field_app_position
+    - field.field.node.application.field_app_resume
     - field.field.node.application.field_app_training
     - field.field.node.application.field_app_why
     - node.type.application
   module:
+    - file
     - user
 id: node.application.default
 targetEntityType: node
@@ -67,6 +69,14 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_app_resume:
+    weight: 109
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
     region: content
   field_app_training:
     weight: 106

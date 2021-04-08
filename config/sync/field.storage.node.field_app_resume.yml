@@ -1,0 +1,23 @@
+uuid: 0dd654ac-0fa6-4da9-ac8b-4580d0859763
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.field_app_resume
+field_name: field_app_resume
+entity_type: node
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

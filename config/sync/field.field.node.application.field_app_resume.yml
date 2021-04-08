@@ -1,0 +1,27 @@
+uuid: 61cb5bea-7403-4ac9-85bc-b65ed8260520
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_app_resume
+    - node.type.application
+  module:
+    - file
+id: node.application.field_app_resume
+field_name: field_app_resume
+entity_type: node
+bundle: application
+label: Resume
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: resumes
+  file_extensions: 'pdf doc docx txt'
+  max_filesize: 25MB
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

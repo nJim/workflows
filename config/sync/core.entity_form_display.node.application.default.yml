@@ -9,10 +9,12 @@ dependencies:
     - field.field.node.application.field_app_overnight
     - field.field.node.application.field_app_phone
     - field.field.node.application.field_app_position
+    - field.field.node.application.field_app_resume
     - field.field.node.application.field_app_training
     - field.field.node.application.field_app_why
     - node.type.application
   module:
+    - file
     - path
     - telephone
 id: node.application.default
@@ -70,6 +72,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_app_resume:
+    weight: 129
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
     region: content
   field_app_training:
     weight: 126
