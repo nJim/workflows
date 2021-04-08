@@ -1,0 +1,4 @@
+name: workflows-demo
+recipe: drupal9
+config:
+  webroot: web
