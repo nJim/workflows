@@ -1,0 +1,5 @@
+name: 'Sandbox'
+type: module
+description: 'A scratchpad for code.'
+core_version_requirement: ^9
+package: 'Custom'

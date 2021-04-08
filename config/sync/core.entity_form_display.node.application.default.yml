@@ -29,10 +29,10 @@ third_party_settings:
       format_type: details
       region: content
       format_settings:
+        description: ''
+        open: true
         id: ''
         classes: ''
-        description: ''
-        open: false
         required_fields: false
       label: 'Contact Information'
     group_position_resume:
@@ -123,13 +123,9 @@ content:
     region: content
   field_app_position:
     weight: 2
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   field_app_resume:
     weight: 3
