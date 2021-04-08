@@ -1,0 +1,6 @@
+#
+app_dashboard.main:
+  title: 'Manage Applications'
+  description: 'Interface for managing applications within the workflow.'
+  parent: system.admin_content
+  route_name: app_dashboard.main

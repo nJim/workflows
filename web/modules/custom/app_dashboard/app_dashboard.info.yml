@@ -1,0 +1,5 @@
+name: 'Application Dashboard'
+type: module
+description: 'Backend tools for managing applications within the workflow.'
+core_version_requirement: ^9
+package: 'Custom'

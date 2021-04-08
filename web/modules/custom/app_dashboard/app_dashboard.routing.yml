@@ -1,0 +1,8 @@
+# The top-level page for reviewing applications within the workflow.
+app_dashboard.main:
+  path: 'admin/content/applications'
+  defaults:
+    _controller: '\Drupal\app_dashboard\Controller\AppDashboardController::contents'
+    _title: 'title'
+  requirements:
+    _permission: 'access content'

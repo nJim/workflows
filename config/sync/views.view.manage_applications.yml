@@ -83,7 +83,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Title
+          label: Name
           exclude: false
           alter:
             alter_text: false
@@ -628,7 +628,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Manage Applications'
+      title: 'Manage Applications: Offer Sent'
       header:
         result:
           id: result
@@ -682,11 +682,82 @@ display:
       path: admin/content/applications/submitted
       menu:
         type: normal
-        title: 'Manage Applications'
+        title: Submitted
         description: ''
         expanded: false
-        parent: system.admin_content
+        parent: app_dashboard.main
         weight: 0
+        context: '0'
+        menu_name: admin
+      display_description: ''
+      title: 'Manage Applications: Submitted'
+      defaults:
+        title: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_app_email'
+        - 'config:field.storage.node.field_app_orientation'
+        - 'config:field.storage.node.field_app_overnight'
+        - 'config:field.storage.node.field_app_position'
+        - 'config:field.storage.node.field_app_resume'
+  page_2:
+    display_plugin: page
+    id: page_2
+    display_title: 'Page: Interview'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: admin/content/applications/interview
+      menu:
+        type: normal
+        title: Interview
+        description: ''
+        expanded: false
+        parent: app_dashboard.main
+        weight: 1
+        context: '0'
+        menu_name: admin
+      display_description: ''
+      title: 'Manage Applications: Interview'
+      defaults:
+        title: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_app_email'
+        - 'config:field.storage.node.field_app_orientation'
+        - 'config:field.storage.node.field_app_overnight'
+        - 'config:field.storage.node.field_app_position'
+        - 'config:field.storage.node.field_app_resume'
+    deleted: false
+  page_3:
+    display_plugin: page
+    id: page_3
+    display_title: 'Page: Offer Sent'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: admin/content/applications/offered
+      menu:
+        type: normal
+        title: 'Offer Sent'
+        description: ''
+        expanded: false
+        parent: app_dashboard.main
+        weight: 2
         context: '0'
         menu_name: admin
       display_description: ''
@@ -704,3 +775,111 @@ display:
         - 'config:field.storage.node.field_app_overnight'
         - 'config:field.storage.node.field_app_position'
         - 'config:field.storage.node.field_app_resume'
+  page_4:
+    display_plugin: page
+    id: page_4
+    display_title: 'Page: Hired'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: admin/content/applications/hired
+      menu:
+        type: normal
+        title: Hired
+        description: ''
+        expanded: false
+        parent: app_dashboard.main
+        weight: 3
+        context: '0'
+        menu_name: admin
+      display_description: ''
+      title: 'Manage Applications: Hired'
+      defaults:
+        title: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_app_email'
+        - 'config:field.storage.node.field_app_orientation'
+        - 'config:field.storage.node.field_app_overnight'
+        - 'config:field.storage.node.field_app_position'
+        - 'config:field.storage.node.field_app_resume'
+    deleted: false
+  page_5:
+    display_plugin: page
+    id: page_5
+    display_title: 'Page: Rejected'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: admin/content/applications/rejected
+      menu:
+        type: normal
+        title: Rejected
+        description: ''
+        expanded: false
+        parent: app_dashboard.main
+        weight: 4
+        context: '0'
+        menu_name: admin
+      display_description: ''
+      title: 'Manage Applications: Rejected'
+      defaults:
+        title: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_app_email'
+        - 'config:field.storage.node.field_app_orientation'
+        - 'config:field.storage.node.field_app_overnight'
+        - 'config:field.storage.node.field_app_position'
+        - 'config:field.storage.node.field_app_resume'
+    deleted: false
+  page_6:
+    display_plugin: page
+    id: page_6
+    display_title: 'Page: Future Prospects'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: admin/content/applications/future
+      menu:
+        type: normal
+        title: 'Future Prospects'
+        description: ''
+        expanded: false
+        parent: app_dashboard.main
+        weight: 5
+        context: '0'
+        menu_name: admin
+      display_description: ''
+      title: 'Manage Applications: Future Prospect'
+      defaults:
+        title: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_app_email'
+        - 'config:field.storage.node.field_app_orientation'
+        - 'config:field.storage.node.field_app_overnight'
+        - 'config:field.storage.node.field_app_position'
+        - 'config:field.storage.node.field_app_resume'
+    deleted: false

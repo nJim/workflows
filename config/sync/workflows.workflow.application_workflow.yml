@@ -34,7 +34,7 @@ type_settings:
     app_requested_interview:
       published: false
       default_revision: false
-      label: 'Requested Interview'
+      label: Interview
       weight: -3
     draft:
       published: false
