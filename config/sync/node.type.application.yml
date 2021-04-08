@@ -1,7 +1,17 @@
 uuid: 36308f19-ab02-4514-8d08-6a51c8d78264
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - node_form_overrides
+third_party_settings:
+  node_form_overrides:
+    insert_button: 'Submit a Job Application'
+    update_button: Update
+    insert_title: 'Join our summer camp team'
+    update_title: 'Edit this [node:content-type:name]'
+    delete_form_title: 'Are you sure you want to delete this [node:content-type:name]?'
+    delete_form_description: 'This action cannot be undone.'
 name: Application
 type: application
 description: 'An online job application.'

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0021690ad7594ddd6c5fed26be95a9df",
+    "content-hash": "0e470a6eb2a6d4dcf23dc4f127dc7bc1",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2030,6 +2030,53 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/field_group",
                 "issues": "https://www.drupal.org/project/issues/field_group"
+            }
+        },
+        {
+            "name": "drupal/node_form_overrides",
+            "version": "dev-1.0.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/node_form_overrides.git",
+                "reference": "e445cf74dcaa2ef32d1d3045dd79fe7eaa103214"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.0.x": "1.0.x-dev"
+                },
+                "drupal": {
+                    "version": "1.0.x-dev",
+                    "datestamp": "1612920545",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "loze",
+                    "homepage": "https://www.drupal.org/user/116906"
+                }
+            ],
+            "description": "Overrides node create, update, and delete form titles and button labels.",
+            "homepage": "https://drupal.org/project/node_form_overrides",
+            "keywords": [
+                "Drupal",
+                "form",
+                "node"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/node_form_overrides",
+                "issues": "http://drupal.org/project/issues/node_form_overrides"
             }
         },
         {
@@ -8058,8 +8105,10 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "drupal/node_form_overrides": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
