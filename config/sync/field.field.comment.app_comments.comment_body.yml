@@ -1,19 +1,17 @@
-uuid: 74c25dd6-d33f-4398-bb29-0c5f080ee119
+uuid: 24a93c1b-679f-46a1-bd0e-1c3aa20d1ed2
 langcode: en
 status: true
 dependencies:
   config:
-    - comment.type.comment
+    - comment.type.app_comments
     - field.storage.comment.comment_body
   module:
     - text
-_core:
-  default_config_hash: TmAKjNrJ7RR60YpqvJq_QqEewYe_S8Kd23n8VRCqiWs
-id: comment.comment.comment_body
+id: comment.app_comments.comment_body
 field_name: comment_body
 entity_type: comment
-bundle: comment
-label: Comment
+bundle: app_comments
+label: 'Hiring Staff Discussion'
 description: ''
 required: true
 translatable: true

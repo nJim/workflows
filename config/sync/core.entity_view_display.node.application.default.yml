@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.application.field_app_comments
     - field.field.node.application.field_app_email
     - field.field.node.application.field_app_experience
     - field.field.node.application.field_app_orientation
@@ -14,6 +15,7 @@ dependencies:
     - field.field.node.application.field_app_why
     - node.type.application
   module:
+    - comment
     - file
     - telephone
     - user
@@ -22,6 +24,15 @@ targetEntityType: node
 bundle: application
 mode: default
 content:
+  field_app_comments:
+    weight: 9
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
+    region: content
   field_app_email:
     weight: 0
     label: above

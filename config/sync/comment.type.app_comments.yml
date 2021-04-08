@@ -1,0 +1,8 @@
+uuid: 2ae5f4d8-dc1e-4e3a-837b-fbf3797b018b
+langcode: en
+status: true
+dependencies: {  }
+id: app_comments
+label: 'Staff Discussion'
+target_entity_type_id: node
+description: ''
