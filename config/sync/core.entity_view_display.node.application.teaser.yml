@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.application.field_app_overnight
     - field.field.node.application.field_app_phone
     - field.field.node.application.field_app_position
+    - field.field.node.application.field_app_rating
     - field.field.node.application.field_app_resume
     - field.field.node.application.field_app_training
     - field.field.node.application.field_app_why
@@ -22,6 +23,11 @@ targetEntityType: node
 bundle: application
 mode: teaser
 content:
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
@@ -35,6 +41,7 @@ hidden:
   field_app_overnight: true
   field_app_phone: true
   field_app_position: true
+  field_app_rating: true
   field_app_resume: true
   field_app_training: true
   field_app_why: true

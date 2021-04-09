@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.application.field_app_overnight
     - field.field.node.application.field_app_phone
     - field.field.node.application.field_app_position
+    - field.field.node.application.field_app_rating
     - field.field.node.application.field_app_resume
     - field.field.node.application.field_app_training
     - field.field.node.application.field_app_why
@@ -18,6 +19,7 @@ dependencies:
   module:
     - comment
     - file
+    - fivestar
     - telephone
     - user
 id: node.application.default
@@ -26,12 +28,12 @@ bundle: application
 mode: default
 content:
   content_moderation_control:
-    weight: -20
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
   field_app_comments:
-    weight: 9
+    weight: 11
     label: above
     settings:
       view_mode: default
@@ -40,21 +42,21 @@ content:
     type: comment_default
     region: content
   field_app_email:
-    weight: 0
+    weight: 2
     label: above
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   field_app_experience:
-    weight: 6
+    weight: 8
     label: above
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   field_app_orientation:
-    weight: 4
+    weight: 6
     label: above
     settings:
       format: default
@@ -64,7 +66,7 @@ content:
     type: boolean
     region: content
   field_app_overnight:
-    weight: 5
+    weight: 7
     label: above
     settings:
       format: default
@@ -74,7 +76,7 @@ content:
     type: boolean
     region: content
   field_app_phone:
-    weight: 1
+    weight: 3
     label: above
     settings:
       title: ''
@@ -82,15 +84,25 @@ content:
     type: telephone_link
     region: content
   field_app_position:
-    weight: 2
+    weight: 4
     label: above
     settings:
       link: false
     third_party_settings: {  }
     type: entity_reference_label
     region: content
+  field_app_rating:
+    weight: 1
+    label: above
+    settings:
+      text_format: average
+      display_format: average
+      fivestar_widget: basic
+    third_party_settings: {  }
+    type: fivestar_stars
+    region: content
   field_app_resume:
-    weight: 3
+    weight: 5
     label: above
     settings:
       use_description_as_link_text: true
@@ -98,14 +110,14 @@ content:
     type: file_default
     region: content
   field_app_training:
-    weight: 8
+    weight: 10
     label: above
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   field_app_why:
-    weight: 7
+    weight: 9
     label: above
     settings: {  }
     third_party_settings: {  }

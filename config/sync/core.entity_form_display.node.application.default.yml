@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.application.field_app_overnight
     - field.field.node.application.field_app_phone
     - field.field.node.application.field_app_position
+    - field.field.node.application.field_app_rating
     - field.field.node.application.field_app_resume
     - field.field.node.application.field_app_training
     - field.field.node.application.field_app_why
@@ -162,6 +163,7 @@ content:
 hidden:
   created: true
   field_app_comments: true
+  field_app_rating: true
   moderation_state: true
   path: true
   promote: true

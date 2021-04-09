@@ -7,11 +7,13 @@ dependencies:
     - field.storage.node.field_app_orientation
     - field.storage.node.field_app_overnight
     - field.storage.node.field_app_position
+    - field.storage.node.field_app_rating
     - field.storage.node.field_app_resume
     - node.type.application
     - system.menu.admin
   module:
     - file
+    - fivestar
     - node
     - user
 id: manage_applications
@@ -569,6 +571,11 @@ display:
           prefix: ''
           suffix: ''
           plugin_id: numeric
+        field_app_rating:
+          id: field_app_rating
+          table: node__field_app_rating
+          field: field_app_rating
+          plugin_id: field
       filters:
         type:
           id: type
@@ -671,6 +678,7 @@ display:
         - 'config:field.storage.node.field_app_orientation'
         - 'config:field.storage.node.field_app_overnight'
         - 'config:field.storage.node.field_app_position'
+        - 'config:field.storage.node.field_app_rating'
         - 'config:field.storage.node.field_app_resume'
   page_1:
     display_plugin: page
@@ -706,6 +714,7 @@ display:
         - 'config:field.storage.node.field_app_orientation'
         - 'config:field.storage.node.field_app_overnight'
         - 'config:field.storage.node.field_app_position'
+        - 'config:field.storage.node.field_app_rating'
         - 'config:field.storage.node.field_app_resume'
   page_2:
     display_plugin: page
@@ -741,6 +750,7 @@ display:
         - 'config:field.storage.node.field_app_orientation'
         - 'config:field.storage.node.field_app_overnight'
         - 'config:field.storage.node.field_app_position'
+        - 'config:field.storage.node.field_app_rating'
         - 'config:field.storage.node.field_app_resume'
     deleted: false
   page_3:
@@ -774,6 +784,7 @@ display:
         - 'config:field.storage.node.field_app_orientation'
         - 'config:field.storage.node.field_app_overnight'
         - 'config:field.storage.node.field_app_position'
+        - 'config:field.storage.node.field_app_rating'
         - 'config:field.storage.node.field_app_resume'
   page_4:
     display_plugin: page
@@ -809,6 +820,7 @@ display:
         - 'config:field.storage.node.field_app_orientation'
         - 'config:field.storage.node.field_app_overnight'
         - 'config:field.storage.node.field_app_position'
+        - 'config:field.storage.node.field_app_rating'
         - 'config:field.storage.node.field_app_resume'
     deleted: false
   page_5:
@@ -845,6 +857,7 @@ display:
         - 'config:field.storage.node.field_app_orientation'
         - 'config:field.storage.node.field_app_overnight'
         - 'config:field.storage.node.field_app_position'
+        - 'config:field.storage.node.field_app_rating'
         - 'config:field.storage.node.field_app_resume'
     deleted: false
   page_6:
@@ -881,5 +894,6 @@ display:
         - 'config:field.storage.node.field_app_orientation'
         - 'config:field.storage.node.field_app_overnight'
         - 'config:field.storage.node.field_app_position'
+        - 'config:field.storage.node.field_app_rating'
         - 'config:field.storage.node.field_app_resume'
     deleted: false

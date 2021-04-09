@@ -1,0 +1,29 @@
+uuid: a335349b-d820-4b8c-978f-9d50afb51349
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_app_rating
+    - node.type.application
+  module:
+    - fivestar
+id: node.application.field_app_rating
+field_name: field_app_rating
+entity_type: node
+bundle: application
+label: Rating
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  stars: 5
+  allow_clear: false
+  allow_revote: true
+  allow_ownvote: true
+  rated_while: viewing
+  enable_voting_target: false
+  target_bridge_field: ''
+  target_fivestar_field: ''
+field_type: fivestar
