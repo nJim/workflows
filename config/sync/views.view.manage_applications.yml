@@ -12,6 +12,7 @@ dependencies:
     - node.type.application
     - system.menu.admin
   module:
+    - app_dashboard
     - file
     - fivestar
     - node
@@ -514,14 +515,19 @@ display:
           absolute: false
           entity_type: node
           plugin_id: entity_link
-        comment_count:
-          id: comment_count
-          table: comment_entity_statistics
-          field: comment_count
+        field_app_rating:
+          id: field_app_rating
+          table: node__field_app_rating
+          field: field_app_rating
+          plugin_id: field
+        app_meta:
+          id: app_meta
+          table: node_field_data
+          field: app_meta
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Comment count'
+          label: 'Application Details'
           exclude: false
           alter:
             alter_text: false
@@ -562,20 +568,8 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          set_precision: false
-          precision: 0
-          decimal: .
-          separator: ','
-          format_plural: false
-          format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
-          plugin_id: numeric
-        field_app_rating:
-          id: field_app_rating
-          table: node__field_app_rating
-          field: field_app_rating
-          plugin_id: field
+          entity_type: node
+          plugin_id: app_meta
       filters:
         type:
           id: type

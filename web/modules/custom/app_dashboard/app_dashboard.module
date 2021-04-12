@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Contains app_dashboard.module.
+ */
+
+ /**
+ * Implements hook_theme().
+ */
+function app_dashboard_theme($existing, $type, $theme, $path) {
+  return [
+    'app_meta' => [
+      'variables' => [
+        'isOvernight' => NULL,
+        'canAttendTraining' => NULL,
+        'resumeUrl' => NULL,
+        'appLink' => NULL,
+      ],
+    ],
+  ];
+}
