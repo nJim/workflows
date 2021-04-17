@@ -4,16 +4,12 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_app_email
-    - field.storage.node.field_app_orientation
-    - field.storage.node.field_app_overnight
     - field.storage.node.field_app_position
     - field.storage.node.field_app_rating
-    - field.storage.node.field_app_resume
     - node.type.application
     - system.menu.admin
   module:
     - app_dashboard
-    - file
     - fivestar
     - node
     - user
@@ -269,257 +265,6 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_app_orientation:
-          id: field_app_orientation
-          table: node__field_app_orientation
-          field: field_app_orientation
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: training
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: boolean
-          settings:
-            format: default
-            format_custom_true: ''
-            format_custom_false: ''
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_app_overnight:
-          id: field_app_overnight
-          table: node__field_app_overnight
-          field: field_app_overnight
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: overnight
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: boolean
-          settings:
-            format: default
-            format_custom_true: ''
-            format_custom_false: ''
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_app_resume:
-          id: field_app_resume
-          table: node__field_app_resume
-          field: field_app_resume
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: Resume
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: file_default
-          settings:
-            use_description_as_link_text: false
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        view_node:
-          id: view_node
-          table: node
-          field: view_node
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: Application
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          text: Application
-          output_url_as_text: false
-          absolute: false
-          entity_type: node
-          plugin_id: entity_link
-        field_app_rating:
-          id: field_app_rating
-          table: node__field_app_rating
-          field: field_app_rating
-          plugin_id: field
         app_meta:
           id: app_meta
           table: node_field_data
@@ -570,6 +315,11 @@ display:
           hide_alter_empty: true
           entity_type: node
           plugin_id: app_meta
+        field_app_rating:
+          id: field_app_rating
+          table: node__field_app_rating
+          field: field_app_rating
+          plugin_id: field
       filters:
         type:
           id: type
@@ -669,11 +419,8 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_app_email'
-        - 'config:field.storage.node.field_app_orientation'
-        - 'config:field.storage.node.field_app_overnight'
         - 'config:field.storage.node.field_app_position'
         - 'config:field.storage.node.field_app_rating'
-        - 'config:field.storage.node.field_app_resume'
   page_1:
     display_plugin: page
     id: page_1
@@ -705,11 +452,8 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_app_email'
-        - 'config:field.storage.node.field_app_orientation'
-        - 'config:field.storage.node.field_app_overnight'
         - 'config:field.storage.node.field_app_position'
         - 'config:field.storage.node.field_app_rating'
-        - 'config:field.storage.node.field_app_resume'
   page_2:
     display_plugin: page
     id: page_2
@@ -741,11 +485,8 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_app_email'
-        - 'config:field.storage.node.field_app_orientation'
-        - 'config:field.storage.node.field_app_overnight'
         - 'config:field.storage.node.field_app_position'
         - 'config:field.storage.node.field_app_rating'
-        - 'config:field.storage.node.field_app_resume'
     deleted: false
   page_3:
     display_plugin: page
@@ -775,11 +516,8 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_app_email'
-        - 'config:field.storage.node.field_app_orientation'
-        - 'config:field.storage.node.field_app_overnight'
         - 'config:field.storage.node.field_app_position'
         - 'config:field.storage.node.field_app_rating'
-        - 'config:field.storage.node.field_app_resume'
   page_4:
     display_plugin: page
     id: page_4
@@ -811,11 +549,8 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_app_email'
-        - 'config:field.storage.node.field_app_orientation'
-        - 'config:field.storage.node.field_app_overnight'
         - 'config:field.storage.node.field_app_position'
         - 'config:field.storage.node.field_app_rating'
-        - 'config:field.storage.node.field_app_resume'
     deleted: false
   page_5:
     display_plugin: page
@@ -848,11 +583,8 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_app_email'
-        - 'config:field.storage.node.field_app_orientation'
-        - 'config:field.storage.node.field_app_overnight'
         - 'config:field.storage.node.field_app_position'
         - 'config:field.storage.node.field_app_rating'
-        - 'config:field.storage.node.field_app_resume'
     deleted: false
   page_6:
     display_plugin: page
@@ -885,9 +617,6 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_app_email'
-        - 'config:field.storage.node.field_app_orientation'
-        - 'config:field.storage.node.field_app_overnight'
         - 'config:field.storage.node.field_app_position'
         - 'config:field.storage.node.field_app_rating'
-        - 'config:field.storage.node.field_app_resume'
     deleted: false

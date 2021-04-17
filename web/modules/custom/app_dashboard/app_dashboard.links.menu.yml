@@ -1,4 +1,4 @@
-#
+# Link to application workflow management tools.
 app_dashboard.main:
   title: 'Manage Applications'
   description: 'Interface for managing applications within the workflow.'

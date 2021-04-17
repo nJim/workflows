@@ -40,12 +40,7 @@ class AppMetaField extends FieldPluginBase {
       '#isOvernight' => $this->isOvernightStaff($entity),
       '#canAttendTraining' => $this->canAttendTraining($entity),
       '#resumeUrl' => $this->getResumeUrl($entity),
-      '#appLink' => [
-        '#type' => 'link',
-        '#title' => 'Application',
-        '#url' => $entity->toUrl(),
-        '#attributes' => ['class' => 'tab-menu-item'],
-      ],
+      '#appUrl' => $entity->toUrl()->toString(),
     ];
   }
 

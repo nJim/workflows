@@ -1,10 +1,28 @@
-{% if isOvernight %}
-  Overnight
-{% endif %}
-{% if canAttendTraining %}
-  training
-{% endif %}
-{% if resumeUrl %}
-  {{ resumeUrl }}
-{% endif %}
-{{ appLink }}
+{{ attach_library('oli/font-awesome') }}
+
+{% set overnight = isOvernight ? 'active' : '' %}
+{% set training = canAttendTraining ? 'active' : '' %}
+
+
+<div class="app-details">
+  {# Icon to show if the applicant is interested in an overnight position. #}
+  <i class="fas fa-campground {{ overnight }}"></i>
+
+  {# Icon to show if the applicant is available for orientation. #}
+  <i class="fas fa-calendar-plus  {{ training }}"></i>
+
+  {# Link to the applicant's resume or an inactive icon. #}
+  {% if resumeUrl %}
+    <a href="{{ resumeUrl }}">
+      <i class="fas fa-file-alt"></i>
+    </a>
+  {% else %}
+    <i class="fas fa-file-alt"></i>
+  {% endif %}
+
+  {# Link to the application node. #}
+  <a href="{{ appUrl }}">
+    <i class="fas fa-link"></i>
+  </a>
+
+</div>

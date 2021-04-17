@@ -2,3 +2,9 @@ global-styling:
   css:
     component:
       css/style.css: {}
+  dependencies:
+    - oli/font-awesome
+font-awesome:
+  version: 1.x
+  js:
+    //kit.fontawesome.com/5e5142ee24.js: { type: external, attributes: { crossorigin: anonymous } }

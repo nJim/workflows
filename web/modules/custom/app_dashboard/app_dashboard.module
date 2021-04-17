@@ -15,7 +15,7 @@ function app_dashboard_theme($existing, $type, $theme, $path) {
         'isOvernight' => NULL,
         'canAttendTraining' => NULL,
         'resumeUrl' => NULL,
-        'appLink' => NULL,
+        'appUrl' => NULL,
       ],
     ],
   ];
