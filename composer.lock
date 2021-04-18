@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d2bb8289e0726a68c0d6bc65984c5268",
+    "content-hash": "9751bf35088a76a188425e19d2c9f410",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2338,6 +2338,66 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/votingapi",
                 "issues": "http://drupal.org/project/issues/votingapi"
+            }
+        },
+        {
+            "name": "drupal/workflow_buttons",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/workflow_buttons.git",
+                "reference": "454c955dcde794fa3dd2ea156ab2d365807f1f49"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "require-dev": {
+                "drupal/workbench_moderation": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta1+10-dev",
+                    "datestamp": "1605920150",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "cedewey",
+                    "homepage": "https://www.drupal.org/user/38694"
+                },
+                {
+                    "name": "gnuget",
+                    "homepage": "https://www.drupal.org/user/992990"
+                },
+                {
+                    "name": "mlncn",
+                    "homepage": "https://www.drupal.org/user/64383"
+                }
+            ],
+            "description": "Provide workflow buttons for content moderation instead of a select dropdown of states.",
+            "homepage": "https://www.drupal.org/project/workflow_buttons",
+            "keywords": [
+                "content",
+                "content moderation",
+                "drupal",
+                "editor",
+                "workflow"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/workflow_buttons.git",
+                "issues": "https://www.drupal.org/project/issues/workflow_buttons"
             }
         },
         {
@@ -8358,7 +8418,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/fivestar": 15,
-        "drupal/node_form_overrides": 20
+        "drupal/node_form_overrides": 20,
+        "drupal/workflow_buttons": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

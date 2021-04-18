@@ -25,6 +25,7 @@
         "drupal/fivestar": "^1.0@alpha",
         "drupal/node_form_overrides": "1.0.x-dev",
         "drupal/pathauto": "^1.8",
+        "drupal/workflow_buttons": "1.x-dev@dev",
         "drush/drush": "^10.4"
     },
     "conflict": {
