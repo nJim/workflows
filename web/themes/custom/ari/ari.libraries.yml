@@ -1,0 +1,6 @@
+global-styling:
+  css:
+    component:
+      css/style.css: {}
+  dependencies:
+    - oli/font-awesome

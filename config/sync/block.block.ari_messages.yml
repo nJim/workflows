@@ -1,0 +1,22 @@
+uuid: ec603006-566e-4ee7-9837-2fddbba00982
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ari
+_core:
+  default_config_hash: KfyaTPRJEcAyy2e5AxEfWQnuHcn4WrfvcWek7lSmHZQ
+id: ari_messages
+theme: ari
+region: highlighted
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }
