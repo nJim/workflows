@@ -1,0 +1,19 @@
+/**
+ * @file
+ * Style the app-meta-field custom views field.
+ *
+ * See: Drupal/app_dashboard/Plugins/views/field/AppMetaField.
+ */
+
+.app-meta-field .fas {
+  font-size: 1.5rem;
+  color: #d6d7db;
+}
+
+.app-meta-field .fas.active {
+  color: #5c5e6b;
+}
+
+.app-meta-field a {
+  text-decoration: none;
+}

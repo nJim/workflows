@@ -3,4 +3,4 @@ global-styling:
     component:
       css/style.css: {}
   dependencies:
-    - oli/font-awesome
+    - custom_theming/font-awesome

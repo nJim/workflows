@@ -1,28 +1,32 @@
-{{ attach_library('oli/font-awesome') }}
+{{ attach_library('app_dashboard/app-meta-field') }}
 
-{% set overnight = isOvernight ? 'active' : '' %}
-{% set training = canAttendTraining ? 'active' : '' %}
-
-
-<div class="app-details">
+<div class="app-meta-field">
   {# Icon to show if the applicant is interested in an overnight position. #}
-  <i class="fas fa-campground {{ overnight }}"></i>
+  {% if isOvernight %}
+    <i class="fas fa-campground active" title="Interested in overnight"></i>
+  {% else %}
+    <i class="fas fa-campground" title="Not interested in overnight"></i>
+  {% endif %}
 
   {# Icon to show if the applicant is available for orientation. #}
-  <i class="fas fa-calendar-plus  {{ training }}"></i>
+  {% if canAttendTraining %}
+    <i class="fas fa-calendar-plus active" title="Available for training"></i>
+  {% else %}
+    <i class="fas fa-calendar-plus" title="Not available for training"></i>
+  {% endif %}
 
   {# Link to the applicant's resume or an inactive icon. #}
   {% if resumeUrl %}
     <a href="{{ resumeUrl }}">
-      <i class="fas fa-file-alt"></i>
+      <i class="fas fa-file-alt active" title="View resume"></i>
     </a>
   {% else %}
-    <i class="fas fa-file-alt"></i>
+    <i class="fas fa-file-alt" title="Did not submit a resume"></i>
   {% endif %}
 
   {# Link to the application node. #}
   <a href="{{ appUrl }}">
-    <i class="fas fa-link"></i>
+    <i class="fas fa-link active" title="View resume"></i>
   </a>
 
 </div>
