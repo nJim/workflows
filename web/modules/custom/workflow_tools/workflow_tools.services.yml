@@ -1,0 +1,10 @@
+services:
+  # Helper functions for moving content through editorial workflows.
+  workflow_tools.manager:
+    class: Drupal\workflow_tools\WorkflowManager
+    arguments:
+      - '@logger.factory'
+      - '@entity_type.manager'
+      - '@content_moderation.moderation_information'
+      - '@form_builder'
+      - '@content_moderation.state_transition_validation'

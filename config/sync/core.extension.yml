@@ -42,6 +42,7 @@ module:
   views_ui: 0
   votingapi: 0
   workflow_buttons: 0
+  workflow_tools: 0
   workflows: 0
   views: 10
   standard: 1000

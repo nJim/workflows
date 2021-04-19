@@ -1,0 +1,5 @@
+name: 'Workflow Tools'
+type: module
+description: 'Custom workflow scripts and interfaces.'
+core_version_requirement: ^9
+package: 'Custom'

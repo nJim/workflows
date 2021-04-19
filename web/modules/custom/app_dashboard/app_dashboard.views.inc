@@ -8,14 +8,13 @@
 /**
  * Implements hook_views_data_alter().
  */
-function app_dashboard_views_data_alter(array &$data) {
+function workflow_tools_views_data_alter(array &$data) {
 
-  // Field Plugin for Demo
-  $data['node_field_data']['app_meta'] = [
-    'title' => t('Custom App Meta'),
+  $data['node_field_data']['moderation_links'] = [
+    'title' => t('Custom Moderation Links'),
     'field' => [
-      'help' => t('Metadata displays in app management view.'),
-      'id' => 'app_meta',
+      'help' => t('Displays links to transition nodes.'),
+      'id' => 'moderation_links',
     ],
   ];
 
