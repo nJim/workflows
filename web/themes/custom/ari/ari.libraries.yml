@@ -1,6 +1,21 @@
+# Global overrides to the Olivero theme.
 global-styling:
   css:
     component:
       css/style.css: {}
   dependencies:
-    - custom_theming/font-awesome
+    - ari/font-awesome
+# Font Awesome is defined in the admin theme but may be used by Oli as well.
+font-awesome:
+  js:
+    //kit.fontawesome.com/5e5142ee24.js: { type: external, attributes: { crossorigin: anonymous } }
+# Moderation links viewsfield component styles.
+moderation-links:
+  css:
+    component:
+      css/moderation-links.css: {}
+# App meta viewsfield component styles.
+app-meta-field:
+  css:
+    component:
+      css/app-meta-field.css: {}

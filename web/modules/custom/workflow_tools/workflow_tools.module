@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * Contains workflow_tools.module.
+ */
+
+ /**
+ * Implements hook_theme().
+ */
+function workflow_tools_theme($existing, $type, $theme, $path) {
+  return [
+    'moderation_links' => [
+      'variables' => [
+        'form' => NULL,
+      ],
+    ],
+  ];
+}

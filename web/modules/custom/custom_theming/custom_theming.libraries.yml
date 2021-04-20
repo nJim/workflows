@@ -1,4 +1,0 @@
-font-awesome:
-  version: 1.x
-  js:
-    //kit.fontawesome.com/5e5142ee24.js: { type: external, attributes: { crossorigin: anonymous } }

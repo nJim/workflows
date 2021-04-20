@@ -1,5 +1,0 @@
-app-meta-field:
-  version: 1.x
-  css:
-    component:
-      css/app-meta-field.css: {}

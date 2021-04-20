@@ -53,8 +53,10 @@ class ModerationLinks extends FieldPluginBase {
    * {@inheritdoc}
    */
   public function render(ResultRow $values) {
-    $entity = $values->_entity;
-    return $this->workflow->getTransitionForm($entity);
+    return [
+      '#theme' => 'moderation_links',
+      '#form' => $this->workflow->getTransitionForm($values->_entity)
+    ];
   }
 
 }

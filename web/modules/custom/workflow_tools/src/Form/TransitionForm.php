@@ -146,7 +146,6 @@ class TransitionForm extends FormBase {
     /** @var \Drupal\content_moderation\Entity\ContentModerationStateInterface[] $transitions */
     $transitions = $this->workflow->getTransitions($entity, $user);
     $element = $form_state->getTriggeringElement();
-    $hasTransition = !empty($transitions[$element['#id']]);
 
     // The log message is specified in the form. If the log is empty and the
     // content is changing workflow states, then provide a default message.

@@ -1,0 +1,12 @@
+/**
+ * @file
+ * Style the moderation-links custom views field.
+ *
+ * See: Drupal/app_dashboard/Plugins/views/field/AppMetaField.
+ */
+
+ .moderation-links .button {
+  font-size: 0.75rem;
+  padding: 7px;
+  margin: 0px 2px;
+}
