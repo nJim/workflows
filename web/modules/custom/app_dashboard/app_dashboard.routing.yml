@@ -3,6 +3,6 @@ app_dashboard.main:
   path: 'admin/content/applications'
   defaults:
     _controller: '\Drupal\app_dashboard\Controller\AppDashboardController::contents'
-    _title: 'title'
+    _title: 'Manage Applications'
   requirements:
     _permission: 'access content'

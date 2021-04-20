@@ -1,5 +1,0 @@
-name: 'Custom Theming'
-type: module
-description: 'A place to store misc frontend support.'
-core_version_requirement: ^9
-package: 'Custom'

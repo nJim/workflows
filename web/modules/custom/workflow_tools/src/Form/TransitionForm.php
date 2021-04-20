@@ -158,8 +158,6 @@ class TransitionForm extends FormBase {
     $revision = $this->prepareNewRevision($entity, $log);
     $revision->set('moderation_state', $state->id());
     $revision->save();
-    $form_state->setRedirectUrl($entity->toUrl());
-
   }
 
   /**
