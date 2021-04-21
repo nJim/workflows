@@ -6,3 +6,11 @@ app_dashboard.main:
     _title: 'Manage Applications'
   requirements:
     _permission: 'access content'
+# Thank you page is shown after filling out the application
+app_dashboard.thankyou:
+  path: 'application/thank-you'
+  defaults:
+    _controller: '\Drupal\app_dashboard\Controller\ThankyouController::contents'
+    _title: 'Thank you for submitting and application'
+  requirements:
+    _permission: 'access content'

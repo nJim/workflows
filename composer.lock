@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e691c835212aa06a586a1f6b4f145fa0",
+    "content-hash": "d79f3cc6809b089503522d6a9d2fb6ae",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1966,6 +1966,50 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/ctools",
                 "issues": "https://www.drupal.org/project/issues/ctools"
+            }
+        },
+        {
+            "name": "drupal/entity_redirect",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/entity_redirect.git",
+                "reference": "8.x-2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_redirect-8.x-2.0.zip",
+                "reference": "8.x-2.0",
+                "shasum": "def38d067c93ed8d59706fdb0690a9fa84b3bbfe"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.0",
+                    "datestamp": "1606093882",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "NickDickinsonWilde",
+                    "homepage": "https://www.drupal.org/user/3094661"
+                }
+            ],
+            "description": "Redirect after entity creation or edit - per content or user.",
+            "homepage": "https://www.drupal.org/project/entity_redirect",
+            "support": {
+                "source": "https://git.drupalcode.org/project/entity_redirect"
             }
         },
         {
