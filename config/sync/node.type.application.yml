@@ -3,8 +3,6 @@ langcode: en
 status: true
 dependencies:
   module:
-    - entity_redirect
-    - menu_ui
     - node_form_overrides
 third_party_settings:
   node_form_overrides:
@@ -14,39 +12,10 @@ third_party_settings:
     update_title: 'Edit this [node:content-type:name]'
     delete_form_title: 'Are you sure you want to delete this [node:content-type:name]?'
     delete_form_description: 'This action cannot be undone.'
-  entity_redirect:
-    redirect:
-      add:
-        active: true
-        destination: url
-        url: /application/thank-you
-        external: ''
-        personalizable: false
-      edit:
-        active: false
-        destination: default
-        url: ''
-        external: ''
-        personalizable: false
-      delete:
-        active: false
-        destination: default
-        url: ''
-        external: ''
-        personalizable: false
-      anonymous:
-        active: false
-        destination: default
-        url: ''
-        external: ''
-  menu_ui:
-    available_menus:
-      - main
-    parent: 'main:'
 name: Application
 type: application
 description: 'An online job application.'
 help: ''
-new_revision: true
+new_revision: false
 preview_mode: 0
 display_submitted: false

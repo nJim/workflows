@@ -19,7 +19,7 @@ class ThankyouController extends ControllerBase {
   public function contents() {
     return [
       '#type' => 'markup',
-      '#markup' => $this->t('Implement method: contents')
+      '#markup' => $this->t('Our search committee is collecting applications through April. Please reach out if you have any questions.')
     ];
   }
 

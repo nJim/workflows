@@ -56,6 +56,13 @@ class TransitionForm extends FormBase {
   protected $time;
 
   /**
+   * Keep track of how many times the form is placed on a page.
+   *
+   * @var int
+   */
+  protected static $instanceId;
+
+  /**
    * KpTransitionForm constructor.
    *
    * @param \Drupal\content_moderation\ModerationInformationInterface $moderation_info
@@ -100,7 +107,14 @@ class TransitionForm extends FormBase {
    * {@inheritdoc}
    */
   public function getFormId() {
-    return 'workflow_transition_form';
+    if (empty(self::$instanceId)) {
+      self::$instanceId = 1;
+    }
+    else {
+      self::$instanceId++;
+    }
+
+    return 'workflow_transition_form_' . self::$instanceId;
   }
 
   /**
