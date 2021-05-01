@@ -24,6 +24,7 @@
         "drupal/entity_redirect": "^2.0",
         "drupal/field_group": "^3.1",
         "drupal/fivestar": "^1.0@alpha",
+        "drupal/hide_revision_field": "^2.2",
         "drupal/moderation_sidebar": "^1.4",
         "drupal/node_form_overrides": "1.0.x-dev",
         "drupal/pathauto": "^1.8",

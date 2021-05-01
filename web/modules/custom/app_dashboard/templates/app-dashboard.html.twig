@@ -1,26 +1,26 @@
 <div class="app-dashboard">
-  <div class="item">
+  <a href="/admin/content/applications/submitted" class="item">
     <h3 class="label">Submitted</h3>
-    <div class="count">10</div>
-  </div>
-  <div class="item">
+    <div class="count">{{ submitted }}</div>
+  </a>
+  <a href="/admin/content/applications/interview" class="item">
     <h3 class="label">Interview</h3>
-    <div class="count">10</div>
-  </div>
-  <div class="item">
+    <div class="count">{{ interview }}</div>
+  </a>
+  <a href="/admin/content/applications/offered" class="item">
     <h3 class="label">Offer Sent</h3>
-    <div class="count">10</div>
-  </div>
-  <div class="item">
+    <div class="count">{{ offered }}</div>
+  </a>
+  <a href="/admin/content/applications/hired" class="item">
     <h3 class="label">Hired</h3>
-    <div class="count">10</div>
-  </div>
-  <div class="item">
+    <div class="count">{{ hired }}</div>
+  </a>
+  <a href="/admin/content/applications/rejected" class="item">
     <h3 class="label">Rejected</h3>
-    <div class="count">10</div>
-  </div>
-  <div class="item">
-    <h3 class="label">Future Prospects</h3>
-    <div class="count">10</div>
-  </div>
+    <div class="count">{{ rejected }}</div>
+  </a>
+  <a href="/admin/content/applications/future" class="item">
+    <h3 class="label">Prospects</h3>
+    <div class="count">{{ prospect }}</div>
+  </a>
 </div>
