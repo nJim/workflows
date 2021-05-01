@@ -1,0 +1,32 @@
+{{ attach_library('ari/app-dashboard') }}
+
+<div class="app-dashboard">
+  <a href="/admin/content/applications/submitted" class="item">
+    <h3 class="label">Submitted</h3>
+    <div class="count">{{ submitted }}</div>
+  </a>
+  <a href="/admin/content/applications/interview" class="item">
+    <h3 class="label">Interview</h3>
+    <div class="count">{{ interview }}</div>
+  </a>
+  <a href="/admin/content/applications/offered" class="item">
+    <h3 class="label">Offer Sent</h3>
+    <div class="count">{{ offered }}</div>
+  </a>
+  <a href="/admin/content/applications/hired" class="item">
+    <h3 class="label">Hired</h3>
+    <div class="count">{{ hired }}</div>
+  </a>
+  <a href="/admin/content/applications/rejected" class="item">
+    <h3 class="label">Rejected</h3>
+    <div class="count">{{ rejected }}</div>
+  </a>
+  <a href="/admin/content/applications/future" class="item">
+    <h3 class="label">Prospects</h3>
+    <div class="count">{{ prospect }}</div>
+  </a>
+</div>
+
+<h2>New Submissions</h2>
+
+{{ drupal_view('manage_applications', 'block_1') }}

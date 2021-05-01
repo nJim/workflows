@@ -19,3 +19,8 @@ app-meta-field:
   css:
     component:
       css/app-meta-field.css: {}
+# App dashboard controller template styles.
+app-dashboard:
+  css:
+    component:
+      css/app-dashboard.css: {}

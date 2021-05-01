@@ -21,7 +21,7 @@ settings:
   stars: 5
   allow_clear: false
   allow_revote: true
-  allow_ownvote: true
+  allow_ownvote: false
   rated_while: viewing
   enable_voting_target: false
   target_bridge_field: ''

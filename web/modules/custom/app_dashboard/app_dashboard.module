@@ -18,5 +18,15 @@ function app_dashboard_theme($existing, $type, $theme, $path) {
         'appUrl' => NULL,
       ],
     ],
+    'app_dashboard' => [
+      'variables' => [
+        'submitted' => 0,
+        'interview' => 0,
+        'offered' => 0,
+        'rejected' => 0,
+        'prospect' => 0,
+        'hired' => 0,
+      ],
+    ],
   ];
 }

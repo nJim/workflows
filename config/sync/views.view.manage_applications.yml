@@ -516,6 +516,50 @@ display:
         - 'config:field.storage.node.field_app_position'
         - 'config:field.storage.node.field_app_rating'
         - 'config:workflow_list'
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: 'Block: Recent'
+    position: 7
+    display_options:
+      display_extenders: {  }
+      display_description: 'Recently submitted apps.'
+      pager:
+        type: some
+        options:
+          items_per_page: 2
+          offset: 0
+      defaults:
+        pager: false
+        header: false
+        footer: false
+      header: {  }
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<a href="/admin/content/applications/submitted">View all submitted applications</a>'
+            format: basic_html
+          plugin_id: text
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_app_email'
+        - 'config:field.storage.node.field_app_position'
+        - 'config:field.storage.node.field_app_rating'
+        - 'config:workflow_list'
   page_1:
     display_plugin: page
     id: page_1

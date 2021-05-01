@@ -1,0 +1,33 @@
+/**
+ * @file
+ * Style the app-dashboard controller template.
+ */
+
+.app-dashboard {
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px 150px 150px;
+}
+
+.app-dashboard .item {
+  background-color: #F3F4F9;
+  margin: 0 10px 10px 0;
+  text-align: center;
+}
+
+.app-dashboard .item:hover {
+  background-color: #d7d9e0;
+  outline: solid 3px #5c71ce;
+}
+
+.app-dashboard .item .label {
+  font-size: 1rem;
+}
+
+.app-dashboard .item .count {
+  font-size: 5rem;
+}
+
+.app-dashboard a {
+  color: #333;
+  text-decoration: none;
+}
