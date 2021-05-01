@@ -1,21 +1,25 @@
-uuid: 36308f19-ab02-4514-8d08-6a51c8d78264
+uuid: fb587cdf-ec29-40ad-a8eb-5d9e65b41eee
 langcode: en
 status: true
 dependencies:
   module:
+    - menu_ui
     - node_form_overrides
 third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
   node_form_overrides:
-    insert_button: 'Submit a Job Application'
+    insert_button: Save
     update_button: Update
-    insert_title: 'Join our summer camp team'
+    insert_title: 'Add new [node:content-type:name]'
     update_title: 'Edit this [node:content-type:name]'
     delete_form_title: 'Are you sure you want to delete this [node:content-type:name]?'
     delete_form_description: 'This action cannot be undone.'
-name: Application
-type: application
-description: 'An online job application.'
+name: Post
+type: post
+description: 'An article or interesting thoughts to share on the website.'
 help: ''
-new_revision: false
+new_revision: true
 preview_mode: 0
 display_submitted: false
